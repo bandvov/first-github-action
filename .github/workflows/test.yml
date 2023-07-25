@@ -27,6 +27,6 @@ jobs:
   
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        uses: actions/test-action@v1
+        uses: ./actions/first-github-action@v3
         with:
           message: "custom action is running" 
