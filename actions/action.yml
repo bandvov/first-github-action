@@ -1,0 +1,15 @@
+name: test-action
+author: bandvov
+description: github action that shows test message
+inputs:
+  message:
+    description: 'some test message'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: show test message
+      shell: bash
+      run: |
+        echo ${{ inputs.message }}
+      
