@@ -25,13 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
+      # Runs a custom github action
+      - name: Run custom action
+        id: hello
         uses: bandvov/first-github-action@v4
         with:
-          message: "custom action is running" 
+          message: "custom action is running"
+        run: echo "The message is: ${{ steps.hello.outputs.message }}"   
 
