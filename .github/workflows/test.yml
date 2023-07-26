@@ -23,7 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v3
-  
+        with:
+          repository: bandvov/first-github-action
+          path: actions/first-github-action
+          
       # Runs a single command using the runners shell
       - name: Run a one-line script
         uses: bandvov/first-github-action@v3
