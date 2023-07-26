@@ -31,7 +31,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        uses: bandvov/first-github-action@v3
+        uses: bandvov/first-github-action@v4
         with:
           message: "custom action is running" 
 
