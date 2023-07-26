@@ -28,7 +28,7 @@ jobs:
       # Runs a custom github action
       - name: Run custom action
         id: hello
-        uses: bandvov/first-github-action@v4
+        uses: bandvov/first-github-action/first-github-action@v4
         with:
           message: "custom action is running"
       - name: Show message    
