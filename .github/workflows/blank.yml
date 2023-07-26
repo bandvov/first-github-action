@@ -31,5 +31,7 @@ jobs:
         uses: bandvov/first-github-action@v4
         with:
           message: "custom action is running"
-        run: echo "The message is: ${{ steps.hello.outputs.message }}"   
+      - name: Show message    
+        run: |
+          echo "The message is: ${{ steps.hello.outputs.message }}"   
 
