@@ -1,0 +1,16 @@
+{
+  "name": "nodemailer-ejs",
+  "version": "1.0.0",
+  "description": "Service to send emails using nodemailer and ejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "bandvov@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4"
+  }
+}
