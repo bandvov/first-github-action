@@ -31,7 +31,7 @@ app.get("/send", async (req, res) => {
 
 
   await transporter.sendMail({
-    from: '"Fred Foo 👻" <bandvov@gmail.com>', // sender address
+    from: "bandvov@gmail.com", // sender address
     to: "stadniuk.roman@gmail.com", // list of receivers
     subject: "Hello ✔", // Subject line
     text: "Hello world?", // plain text body
